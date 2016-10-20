@@ -16,11 +16,14 @@ pacman -S grub
 grub-install  /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 passwd
-
+useradd ygromov
+passwd ygromov
+mkdir /home/ygromov
+chown ygromov:ygromov /home/ygromov
 
 ####################################################
 
-pacman -S xorg xorg-xinit plasma
+pacman -S xorg xorg-xinit plasma konsole
 nano /etc/sddm.conf
 Current=breeze
 systemctl enable sddm
