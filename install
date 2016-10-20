@@ -1,0 +1,43 @@
+echo ygdesk > /etc/hostname
+nano /etc/mkinitcpio.conf
+mkinitcpio -p linux
+pacman -S grub
+grub-install  /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+passwd
+
+pacman -S xorg xorg-xinit plasma
+nano /etc/sddm.conf
+Current=breeze
+systemctl enable sddm
+
+
+
+
+####################################################
+
+cd /etc/netctl/
+cp examples/ethernet-static  ./
+nano ethernet-static
+netctl start ethernet-static
+netctl enable ethernet-static
+
+timedatectl status
+timedatectl set-ntp true
+
+nano /etc/locale.gen
+locale-gen
+nano /etc/locale.conf
+LANG=en_US.UTF-8
+LC_MESSAGES=en_US.UTF-8
+
+ln -fs /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+hwclock --systohc --utc
+
+
+
+htop strace lsof tcpdump lshw tmux terminus-font ttf-dejavu syslog-ng
+firefox chromium vlc dolphin yakuake konsole qt4 hdparm libreoffice
+
+systemctl enable syslog-ng
+systemctl start syslog-ng
