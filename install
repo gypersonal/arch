@@ -54,7 +54,7 @@ hwclock --systohc --utc
 
 
 htop strace lsof tcpdump lshw tmux terminus-font ttf-dejavu syslog-ng
-firefox chromium vlc dolphin yakuake konsole qt4 hdparm libreoffice
+firefox chromium vlc dolphin yakuake qt4 hdparm libreoffice
 
 systemctl enable syslog-ng
 systemctl start syslog-ng
