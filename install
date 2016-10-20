@@ -1,3 +1,11 @@
+mount /mnt
+mount /mnt/boot
+
+pacstrap /mnt base
+
+arch-chroot /mnt
+
+
 echo ygdesk > /etc/hostname
 nano /etc/mkinitcpio.conf
 mkinitcpio -p linux
