@@ -52,9 +52,10 @@ ln -fs /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 hwclock --systohc --utc
 
 
-
-pacman -S htop strace lsof tcpdump lshw tmux terminus-font ttf-dejavu syslog-ng firefox chromium vlc dolphin yakuake qt4 hdparm
+pacman -S terminus-font ttf-dejavu
+pacman -S firefox chromium vlc dolphin yakuake qt4 hdparm freerdp krdc
+pacman -S htop strace lsof tcpdump lshw tmux bind-utils net-tools mc
 pacman -S libreoffice
-
+pacman -S syslog-ng
 systemctl enable syslog-ng
 systemctl start syslog-ng
