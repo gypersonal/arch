@@ -63,3 +63,6 @@ pacman -S libreoffice
 pacman -S syslog-ng
 systemctl enable syslog-ng
 systemctl start syslog-ng
+
+
+https://wiki.archlinux.org/index.php/SSH_keys_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)
