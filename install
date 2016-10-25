@@ -32,6 +32,7 @@ systemctl enable sddm
 
 
 ####################################################
+echo "alias ll='ls -lah --color'" >> /etc/bash.bashrc
 
 cd /etc/netctl/
 cp examples/ethernet-static  ./
