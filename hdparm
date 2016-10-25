@@ -1,0 +1,8 @@
+hdparm -Tt /dev/sda
+
+/dev/sda:
+ Timing cached reads:   2768 MB in  2.00 seconds = 1384.30 MB/sec
+ Timing buffered disk reads: 220 MB in  3.02 seconds =  72.90 MB/sec
+ 	Model Number:       ST3160812AS                             
+	Serial Number:      5LS2LGZC
+	Firmware Revision:  3.AAE  
