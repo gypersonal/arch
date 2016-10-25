@@ -33,6 +33,7 @@ systemctl enable sddm
 
 ####################################################
 echo "alias ll='ls -lah --color'" >> /etc/bash.bashrc
+echo "ygromov ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 cd /etc/netctl/
 cp examples/ethernet-static  ./
