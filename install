@@ -58,7 +58,7 @@ pacman -S terminus-font ttf-dejavu
 pacman -S firefox chromium vlc dolphin yakuake qt4 hdparm freerdp krdc
 pacman -S htop strace lsof tcpdump lshw tmux bind-utils net-tools mc openssh
 pacman -S virtualbox
-modpobe vboxdrv
+modprobe vboxdrv
 pacman -S libreoffice
 pacman -S syslog-ng
 systemctl enable syslog-ng
