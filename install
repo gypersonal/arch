@@ -75,3 +75,5 @@ https://wiki.archlinux.org/index.php/SSH_keys_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0
 ~/.config/plasma-workspace/shutdown/ssh-agent-shutdown.sh
 #!/bin/sh
 [ -z "$SSH_AGENT_PID" ] || eval "$(ssh-agent -k)"
+
+chmod 700 ~/.config/plasma-workspace/env/ssh-agent-startup.sh ~/.config/plasma-workspace/shutdown/ssh-agent-shutdown.sh 
