@@ -55,8 +55,9 @@ hwclock --systohc --utc
 
 
 pacman -S terminus-font ttf-dejavu
-pacman -S firefox chromium vlc dolphin yakuake qt4 hdparm freerdp krdc
+pacman -S firefox chromium vlc dolphin yakuake qt4 hdparm freerdp krdc kdebase-keditbookmarks
 pacman -S htop strace lsof tcpdump lshw tmux bind-tools net-tools mc openssh iptraf-ng sysstat
+pacman -S icedtea-web
 pacman -S virtualbox
 modprobe vboxdrv
 pacman -S libreoffice
