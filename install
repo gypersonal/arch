@@ -57,14 +57,20 @@ hwclock --systohc --utc
 pacman -S terminus-font ttf-dejavu
 pacman -S firefox chromium vlc dolphin yakuake qt4 hdparm freerdp krdc kdebase-keditbookmarks
 pacman -S htop strace lsof tcpdump lshw tmux bind-tools net-tools mc openssh sudo iptraf-ng sysstat ethtool
-pacman -S icedtea-web
-pacman -S virtualbox
-modprobe vboxdrv
+
 pacman -S libreoffice
 pacman -S syslog-ng
 systemctl enable syslog-ng
 systemctl start syslog-ng
 
+
+pacman -S virtualbox
+modprobe vboxdrv
+virtualbox / vboxnet0
+https://bbs.archlinux.org/viewtopic.php?id=131711
+
+work:
+pacman -S icedtea-web dia
 
 https://wiki.archlinux.org/index.php/SSH_keys_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)
 
@@ -78,8 +84,7 @@ https://wiki.archlinux.org/index.php/SSH_keys_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0
 
 chmod 700 ~/.config/plasma-workspace/env/ssh-agent-startup.sh ~/.config/plasma-workspace/shutdown/ssh-agent-shutdown.sh
 
-virtualbox / vboxnet0
-https://bbs.archlinux.org/viewtopic.php?id=131711
+
 
 
 https://wiki.archlinux.org/index.php/NTFS-3G
