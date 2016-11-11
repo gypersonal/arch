@@ -16,7 +16,7 @@ refuse-mschap
 
 File: /etc/ppp/peers/pptpvpn
 # written by pptpsetup
-pty "pptp 176.74.14.227 --nolaunchpppd"
+pty "pptp IP --nolaunchpppd"
 lock
 noauth
 nobsdcomp
